@@ -11,7 +11,6 @@ VK_TOKEN = env('VK_TOKEN')
 API_VERSION = '5.131'
 GROUP_ID = env.int('GROUP_ID')
 IMG_URL = 'https://xkcd.com/{id}/info.0.json'
-VK_AUTH_URL = 'https://oauth.vk.com/authorize'
 VK_API_URL = 'https://api.vk.com/method/{metod}'
 
 
