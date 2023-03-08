@@ -1,5 +1,4 @@
 import requests
-from urllib.parse import urlparse
 import os
 import environs
 import random
@@ -12,12 +11,6 @@ API_VERSION = '5.131'
 GROUP_ID = env.int('GROUP_ID')
 IMG_URL = 'https://xkcd.com/{id}/info.0.json'
 VK_API_URL = 'https://api.vk.com/method/{metod}'
-
-
-def get_file_extension(url):
-    path = urlparse(url).path
-    path, extension = os.path.splitext(path)
-    return extension
 
 
 def download_image(url, path):
