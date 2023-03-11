@@ -111,11 +111,6 @@ if __name__ == '__main__':
     env.read_env()
     vk_token = env('VK_IMPLICIT_FLOW_TOKEN')
     vk_group_id = env.int('VK_GROUP_ID')
-    params = {
-        'access_token': vk_token,
-        'v': API_VERSION,
-        'owner_id': vk_group_id,
-    }
     img_name, img_description = get_xkcd_random_comic(get_max_comic_num())
     try:
         upload_url = get_wall_upload_server(vk_token, vk_group_id, API_VERSION)
